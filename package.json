@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aleksandrKrylov/Yandex-Practicum.Diplom.git"
+    "url": "git+https://aleksandrKrylov.github.io/Yandex-Practicum.Diplom/"
   },
   "author": "Alexander Krylov <a.v.krylovv@yandex.ru>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aleksandrKrylov/Yandex-Practicum.Diplom/issues"
   },
-  "homepage": "https://github.com/aleksandrKrylov/Yandex-Practicum.Diplom#readme",
+  "homepage": "https://aleksandrKrylov.github.io/Yandex-Practicum.Diplom/",
   "devDependencies": {
     "@babel/cli": "7.10.5",
     "@babel/core": "7.11.1",
@@ -28,6 +28,7 @@
     "css-loader": "4.2.1",
     "cssnano": "4.1.10",
     "file-loader": "6.0.0",
+    "gh-pages": "2.2.0",
     "html-webpack-plugin": "4.3.0",
     "image-webpack-loader": "6.0.0",
     "imagemin-pngquant": "5.0.1",

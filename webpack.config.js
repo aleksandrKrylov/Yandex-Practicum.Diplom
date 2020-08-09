@@ -72,7 +72,7 @@ module.exports = {
                 quality: 75
               },
             }
-          }
+          },
         ]
       }
     ]
@@ -113,4 +113,5 @@ module.exports = {
     }),
   ]
 }
+
 

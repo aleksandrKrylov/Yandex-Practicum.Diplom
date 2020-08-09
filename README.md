@@ -32,4 +32,4 @@ ES6, Babel, CSS3, HTML5, Webpack, OOP, BEM
 - Разместить production-билд на github pages - `npm run deploy`
 
 ## Ссылка на github pages:
-
+https://aleksandrKrylov.github.io/Yandex-Practicum.Diplom/
