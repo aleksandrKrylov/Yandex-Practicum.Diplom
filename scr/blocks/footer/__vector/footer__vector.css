@@ -1,0 +1,15 @@
+.footer__vector {
+  padding-right: 7%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 587px) {
+  .footer__vector {
+    padding-right: 4%;
+  }
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .footer__vector {
+    padding: 0;
+  }
+}

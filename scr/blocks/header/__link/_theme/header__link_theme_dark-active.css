@@ -1,0 +1,24 @@
+.header__link_theme_dark-active {
+  color: #1A1B22;
+  border-bottom: 3px inset #1A1B22;
+  padding-bottom: 22px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header__link_theme_dark-active {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .header__link_theme_dark-active {
+    padding-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .header__link_theme_dark-active {
+    padding-bottom: 15px;
+  }
+
+}

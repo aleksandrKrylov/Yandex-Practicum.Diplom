@@ -1,0 +1,27 @@
+@import url(./_locations/commit-history__button_locations_left.css);
+@import url(./_locations/commit-history__button_locations_right.css);
+
+.commit-history__button {
+  width: 40px;
+  height: 40px;
+  background: #1A1B22;
+  box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+  border-radius: 100%;
+  border: 0;
+  color: #FFFFFF;
+  font-size: 25px;
+  position: absolute;
+  top: 126px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 587px) {
+  .commit-history__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .commit-history__button {
+    display: none;
+  }
+}

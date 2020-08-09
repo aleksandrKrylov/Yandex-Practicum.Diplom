@@ -1,0 +1,17 @@
+.analytics__item-statistics {
+  margin: 0;
+  background: #2F71E5;
+  width: 50%;
+  height: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  list-style-type: none;
+}

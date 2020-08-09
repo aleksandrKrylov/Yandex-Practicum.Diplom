@@ -1,0 +1,15 @@
+.commit-history__link_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 450px) and (min-width: 320px) {
+  .commit-history__link_hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8% 5% 0;
+    border: inset 3px;
+    border-radius: 100px;
+    height: 56px;
+  }
+}

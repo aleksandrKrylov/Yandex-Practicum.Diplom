@@ -1,0 +1,15 @@
+.clients__container-paragraph {
+  width: 57%;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 587px) {
+  .clients__container-paragraph {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .clients__container-paragraph {
+    width: 100%;
+  }
+}
