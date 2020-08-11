@@ -11,7 +11,7 @@
   <link rel="icon" href="/scr/images/Group.png">
 </head>
 <body class="box">
-  <div class="background" style="background-image: url(/scr/images/georgia-de-lotz--UsJoNxLaNo-unsplash.jpg);">
+  <div class="background">
     <header class="header header_theme_white">
       <p class="header__logo">NewsAnalyzer</p>
       <nav class="header__menu">
@@ -25,7 +25,7 @@
         <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю.</p>
         <form class="search__form" id="form" name="new">
-          <input class="search__input"  id="title" type="text" name="name" placeholder="Введите тему новости"
+          <input class="search__input" id="title" type="text" name="name" placeholder="Введите тему новости"
             minlength="2" maxlength="30" required>
           <button class="search__button" id="submit" type="submit">Искать</button>
         </form>
@@ -38,6 +38,7 @@
   </section>
   <section class="not-found">
      <img class="not-found__img" src="<%=require('./images/not-found_v1.png')%>"  alt="здесь должна быть картинка, но что-то пошло не так">
+     <img style="display: none;" src="<%=require('./images/Group.png')%>"  alt="здесь должна быть картинка, но что-то пошло не так">
     <h3 class="not-found__title">Ничего не найдено</h3>
     <p class="not-found__subtitle">К сожалению по вашему запросу
       ничего не найдено.</p>
