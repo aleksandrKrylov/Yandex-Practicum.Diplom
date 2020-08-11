@@ -1,0 +1,5 @@
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .footer__link-txt {
+    margin-top: 0;
+  }
+}

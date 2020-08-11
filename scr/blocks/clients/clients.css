@@ -1,0 +1,21 @@
+@import url(./__paragraph/clients__paragraph.css);
+@import url(./__container-paragraph/clients__container-paragraph.css);
+@import url(./__title/clients__title.css);
+
+.clients {
+  padding: 6% 7% 7%;
+  background: #E5E5E5;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 587px) {
+  .clients {
+    padding: 4% 5% 3%;
+  }
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .clients {
+    padding: 5% 5% 9%;
+  }
+}

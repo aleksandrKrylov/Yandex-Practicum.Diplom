@@ -1,0 +1,10 @@
+.author__blok {
+  display: flex;
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .author__blok {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,18 @@
+.commit-history__container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 7% 5%;
+}
+
+@media screen and (max-width: 768px) and (min-width: 587px) {
+  .commit-history__container {
+    margin: 0 5% 4%;
+  }
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .commit-history__container {
+    margin: 0 5% 4%;
+  }
+}

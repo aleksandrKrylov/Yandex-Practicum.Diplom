@@ -1,0 +1,21 @@
+@import url(./__blok/commit-history__blok.css);
+@import url(./__card/commit-history__card.css);
+@import url(./__container/commit-history__container.css);
+@import url(./__date/commit-history__date.css);
+@import url(./__text/commit-history__text.css);
+@import url(./__email/commit-history__email.css);
+@import url(./__image/commit-history__image.css);
+@import url(./__link/commit-history__link.css);
+@import url(./__list/commit-history__list.css);
+@import url(./__name/commit-history__name.css);
+@import url(./__title/commit-history__title.css);
+@import url(./__blok-transitions/commit-history__blok-transitions.css);
+@import url(./__transitions/commit-history__transitions.css);
+@import url(.//__button/commit-history__button.css);
+@import url(./__button-container/commit-history__button-container.css);
+
+.commit-history {
+  background: #F5F6F7;
+  padding: 5% 0;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}

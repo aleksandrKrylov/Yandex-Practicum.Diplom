@@ -1,0 +1,8 @@
+.analytics__list-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 0;
+  height: 504px;
+  padding: 0;
+}

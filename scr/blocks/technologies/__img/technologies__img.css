@@ -1,0 +1,19 @@
+.technologies__img {
+  margin-right: 8%;
+}
+
+.technologies__img:last-child {
+  margin-right: 0%;
+}
+
+@media screen and (max-width: 1254px) and (min-width: 587px) {
+  .technologies__img {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .technologies__img {
+    margin: 0;
+  }
+}
