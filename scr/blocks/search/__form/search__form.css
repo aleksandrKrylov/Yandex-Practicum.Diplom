@@ -1,9 +1,25 @@
 .search__form {
   position: relative;
+  margin: 64px 0 0px 0;
 }
 
-@media screen and (min-width: 320px) and (max-width: 424px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .search__form {
-    position: static;
+    margin-top: 24px;
   }
 }
+
+@media screen and (min-width: 661px) and (max-width: 767px) {
+  .search__form {
+    margin-top: 24px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 660px) {
+  .search__form {
+    margin-top: 64px;
+  }
+}
+
+
+
