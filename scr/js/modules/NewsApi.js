@@ -1,12 +1,12 @@
 export class NewsApi {
-  constructor(apiData) {
+  constructor(apiData, getDateApi) {
     this.token = apiData.authorization;
     this.url = apiData.url;
+    this.getDateApi = getDateApi;
   }
 
   getNewsCards(keyWord) {
-   /* from=2020-08-14  to=2020-08-14  ДОБАВИТЬ ПОЗЖЕ ДАТУ */
-    return fetch(`${this.url}/news/v2/everything?q=${keyWord}&apiKey=${this.token}&language=ru&pageSize=100`)
+    return fetch(`${this.url}/news/v2/everything?q=${keyWord}&apiKey=${this.token}&from=${this.getDateApi(7)}&to=${this.getDateApi(0)}&language=ru&pageSize=100`)
     .then((res) => {
       if (!res.ok) {
         return Promise.reject(`Ошибка: ${res.status}`);

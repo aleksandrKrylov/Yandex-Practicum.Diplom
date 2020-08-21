@@ -1,10 +1,10 @@
 export class NewsCardList {
-  constructor(container, createNewsCard, buttonShowMore, numberNewsCard, containerList) {
+  constructor(container, createNewsCard, buttonShowMore, numberNewsCards, buttonSearch) {
     this.container = container;
     this.createNewsCard = createNewsCard;
     this.buttonShowMore = buttonShowMore;
-    this.containerList = containerList;
-    this.numberNewsCard = numberNewsCard
+    this.numberNewsCards = numberNewsCards;
+    this.buttonSearch = buttonSearch;
     this._indexlist = 0;
   }
 
@@ -16,7 +16,7 @@ export class NewsCardList {
   }
 
   _counter() {
-    return this._arrayNews.slice(this._indexlist * this.numberNewsCard, (this._indexlist + 1) * this.numberNewsCard);
+    return this._arrayNews.slice(this._indexlist * this.numberNewsCards, (this._indexlist + 1) * this.numberNewsCards);
   }
 
   _splitArray() {
@@ -29,6 +29,15 @@ export class NewsCardList {
     this.buttonShowMore.addEventListener("click", () => {
       this._indexlist ++;
       this._splitArray();
+      if (this._arrayNews.length == this.container.childNodes.length) {
+        this.buttonShowMore.classList.toggle('results__button_hidden');
+      }
+    });
+    this.buttonSearch.addEventListener("click", () => {
+      this._indexlist = 0
+      if (this.buttonShowMore.classList.contains('results__button_hidden')) {
+        this.buttonShowMore.classList.toggle('results__button_hidden');
+      }
     });
   };
 }

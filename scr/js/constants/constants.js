@@ -1,1 +1,1 @@
-export const NUMBER_NEWS_CARD = 3;
+export const NUMBER_NEWS_CARDS = 3;

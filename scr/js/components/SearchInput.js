@@ -3,8 +3,8 @@ export class SearchInput {
     this.form = form;
     this.setData = setData;
     this.getData = getData;
-    this.input = this.form.querySelector(".search__input");
-    this.button = this.form.querySelector(".search__button");
+    this._input = this.form.querySelector(".search__input");
+    this._button = this.form.querySelector(".search__button");
   }
 
   checkInputValidity(element) {
@@ -23,27 +23,27 @@ export class SearchInput {
   setSubmitButtonState() {
     // Валидация кнопки
     if (!this.form.checkValidity()) {
-      this.button.setAttribute("disabled", true);
-      this.button.classList.remove("search__button_valid");
+      this._button.setAttribute("disabled", true);
+      this._button.classList.remove("search__button_valid");
     } else {
-      this.button.removeAttribute("disabled");
-      this.button.classList.add("search__button_valid");
+      this._button.removeAttribute("disabled");
+      this._button.classList.add("search__button_valid");
     }
   }
 
   validationInput() {
     this.form.addEventListener("input", (event) => {
       this.checkInputValidity(event.target);
-      this.setSubmitButtonState(this.button);
+      this.setSubmitButtonState(this._button);
     });
   }
 
   getFieldValue() {
     // Получаем значения поля
-    this.button.addEventListener("click", (event) => {
+    this._button.addEventListener("click", (event) => {
       event.preventDefault();
-      this.setData('keyWord',  this.input.value)
+      this.setData('keyWord',  this._input.value)
     });
-    this.input.value = this.getData('keyWord');
+    this._input.value = this.getData('keyWord');
   }
 }

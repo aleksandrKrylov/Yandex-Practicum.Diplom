@@ -2,10 +2,13 @@
 @import url(./__paragraph/preloader__paragraph.css);
 
 .preloader {
-  display: none;
 	margin: 0;
   padding: 5% 0;
 	background-color: #F5F6F7;
   overflow: hidden;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+.preloader_hidden {
+  display: none;
 }

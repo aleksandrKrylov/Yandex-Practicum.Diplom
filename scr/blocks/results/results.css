@@ -17,6 +17,10 @@
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
 
+.results_hidden {
+  display: none;
+}
+
 @media screen and (max-width: 1423px) and (min-width: 1000px) {
   .results {
     padding: 40px;
