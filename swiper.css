@@ -1,0 +1,185 @@
+/*
+.swiper-container {
+
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  background: lightblue;
+
+}
+
+.swiper-slide:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+.swiper-slide__date {
+
+}
+
+.swiper-slide__blok {
+
+}
+
+.swiper-slide__image {
+
+}
+
+.swiper-slide__data {
+
+}
+
+.swiper-slide__name {
+
+}
+
+.swiper-slide__email {
+
+}
+
+.swiper-slide__text {
+
+}
+
+.swiper-pagination {
+  width: 40px;
+  height: 40px;
+  background: black;
+}
+
+.swiper-button-prev {
+
+}
+
+.swiper-button-next {
+
+}
+
+.swiper-scrollbar {
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  position: relative;
+  padding: 10px 0;
+}
+
+.swiper-slide {
+  min-width: 358px;
+  min-height: 260px;
+  background: #fff;
+  background: aquamarine;
+  border-radius: 16px;
+  transition: box-shadow .2s;
+  padding: 2% 1% 0 2%;
+
+}
+
+.swiper-slide:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+.swiper-slide__date {
+  margin: 0;
+  padding-bottom: 4%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #b6bcbf;
+}
+
+.swiper-slide__blok {
+  display: flex;
+}
+
+.swiper-slide__image {
+  width: 64px;
+  height: 64px;
+  margin-right: 4%;
+  background-size: cover;
+  border-radius: 100%;
+}
+
+.swiper-slide__data {
+
+}
+
+.swiper-slide__name {
+  margin: 0;
+  padding-top: 4px;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+}
+
+.swiper-slide__email {
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #1a1b22;
+}
+
+.swiper-slide__text {
+  margin: 0;
+  padding-top: 4%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1a1b22;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow-y: hidden;
+}
+
+.swiper-pagination {
+
+}
+
+.swiper-button-prev {
+  width: 100px;
+  width: 100px;
+  background: red;
+  color: red;
+}
+
+.swiper-button-next {
+  width: 100px;
+  width: 100px;
+  background: red;
+}
+
+.swiper-scrollbar {
+
+}
+*/

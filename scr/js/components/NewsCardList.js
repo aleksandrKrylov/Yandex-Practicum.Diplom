@@ -40,4 +40,8 @@ export class NewsCardList {
       }
     });
   };
+
+  removeListener() {
+
+  };
 }
