@@ -1,0 +1,28 @@
+.swiper-slide {
+  width: 360px;
+  height: 60%;
+  background: #fff;
+  border-radius: 16px;
+  transition: box-shadow .2s;
+  padding: 7% 2%;
+}
+
+.swiper-slide:hover {
+  box-shadow: 0 0 15px #000;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .swiper-slide {
+    width: 336px;
+    height: 70%;
+    padding: 13% 2% 0;
+  }
+}
+
+@media screen and (max-width: 586px) and (min-width: 320px) {
+  .swiper-slide {
+    width: 288px;
+    height: 77%;
+    padding: 20% 2% 0;
+  }
+}

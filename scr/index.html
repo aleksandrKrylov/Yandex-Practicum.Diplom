@@ -8,7 +8,7 @@
   <meta name="author" content="Александр Крылов">
   <title>Что в мире творится?</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
-  <link rel="icon" href="/scr/images/Group.png">
+  <link rel="icon" href="./images/Group.png">
 </head>
 <body class="box">
   <div class="background">
@@ -24,10 +24,11 @@
         <h1 class="search__title">Что в мире творится?</h1>
         <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за
           прошедшую неделю.</p>
-        <form class="search__form" id="form" name="new">
-          <input class="search__input" id="title" type="text" name="name" placeholder="Введите тему новости"
-            minlength="2" maxlength="30" required>
-          <button class="search__button" id="submit" type="submit">Искать</button>
+        <form class="search__form" id="form" name="new" novalidate>
+          <input class="search__input" id="title" type="text" placeholder="Введите тему новости"
+            minlength="2" required>
+            <span id="error-title" class="error-message"></span>
+          <button class="search__button search__button_valid" id="submit" type="submit" disabled>Искать</button>
         </form>
       </div>
     </section>
@@ -48,109 +49,29 @@
       <h3 class="results__text">Результаты поиска</h3>
       <a class="results__link-analytics" href="analytics.html">Посмотреть аналитику ></a>
     </div>
-    <div class="results__list">
-      <div class="results__card">
-        <a class="results__link-card"
-          href="https://www.google.com/webhp?hl=ru&ictx=2&sa=X&ved=0ahUKEwjGma7G_4PrAhVxpYsKHdqLCJAQPQgH">
-          <div class="results__image" style="background-image: url(/scr/images/image_08.jpg)"></div>
-          <div class="results__description">
-            <p class="results__date">2 августа, 2019</p>
-            <h3 class="results__title">Национальное достояние – парки</h3>
-            <p class="results__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-              природе.</p>
-            <p class="results__source">Лента.ру</p>
-          </div>
-        </a>
-      </div>
-      <div class="results__card">
-        <a class="results__link-card"
-          href="https://www.google.com/webhp?hl=ru&ictx=2&sa=X&ved=0ahUKEwjGma7G_4PrAhVxpYsKHdqLCJAQPQgH">
-          <div class="results__image" style="background-image: url(/scr/images/image_04.jpg)"></div>
-          <div class="results__description">
-            <p class="results__date">2 августа, 2019</p>
-            <h3 class="results__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="results__subtitle">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-              запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-            <p class="results__source">Медуза</p>
-          </div>
-        </a>
-      </div>
-      <div class="results__card">
-        <a class="results__link-card"
-          href="https://www.google.com/webhp?hl=ru&ictx=2&sa=X&ved=0ahUKEwjGma7G_4PrAhVxpYsKHdqLCJAQPQgH">
-          <div class="results__image" style="background-image: url(/scr/images/image_07.jpg)"></div>
-          <div class="results__description">
-            <p class="results__date">2 августа, 2019</p>
-            <h3 class="results__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="results__subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-              необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <p class="results__source">Риа</p>
-          </div>
-        </a>
-      </div>
-      <div class="results__card">
-        <a class="results__link-card"
-          href="https://www.google.com/webhp?hl=ru&ictx=2&sa=X&ved=0ahUKEwjGma7G_4PrAhVxpYsKHdqLCJAQPQgH">
-          <div class="results__image" style="background-image: url(/scr/images/image_06.jpg)"></div>
-          <div class="results__description">
-            <p class="results__date">2 августа, 2019</p>
-            <h3 class="results__title">Национальное достояние – парки</h3>
-            <p class="results__subtitle">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала
-              складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к
-              природе.</p>
-            <p class="results__source">Дзен</p>
-          </div>
-        </a>
-      </div>
-      <div class="results__card">
-        <a class="results__link-card"
-          href="https://www.google.com/webhp?hl=ru&ictx=2&sa=X&ved=0ahUKEwjGma7G_4PrAhVxpYsKHdqLCJAQPQgH">
-          <div class="results__image" style="background-image: url(/scr/images/image_01.png)"></div>
-          <div class="results__description">
-            <p class="results__date">2 августа, 2019</p>
-            <h3 class="results__title">Лесные огоньки: история одной фотографии</h3>
-            <p class="results__subtitle">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы
-              запечатлеть ускользающую красоту одного
-              из местных чудес природы.</p>
-            <p class="results__source">Афиша</p>
-          </div>
-        </a>
-      </div>
-      <div class="results__card">
-        <a class="results__link-card"
-          href="https://www.google.com/webhp?hl=ru&ictx=2&sa=X&ved=0ahUKEwjGma7G_4PrAhVxpYsKHdqLCJAQPQgH">
-          <div class="results__image" style="background-image: url(/scr/images/image_05.jpg)"></div>
-          <div class="results__description">
-            <p class="results__date">2 августа, 2019</p>
-            <h3 class="results__title">«Первозданная тайга»: новый фотопроект Игоря Шпиленка</h3>
-            <p class="results__subtitle">Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о
-              необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...</p>
-            <p class="results__source">Медиазона</p>
-          </div>
-        </a>
-      </div>
-    </div>
+    <div class="results__list"></div>
     <button class="results__button">Показать еще</button>
   </section>
-  <section class="author">
+<!--  <section class="author">
     <div class="author__blok">
       <picture>
-        <source srcset="<%=require('./images/image-iPone.png')%>" media="(max-width: 426px)">
-        <source srcset="<%=require('./images/image-iPad.png')%>" media="(max-width: 769px)">
-        <img class="author__img" src="<%=require('./images/image-03.png')%>"
+        <source srcset="<%=require('./images/author272.png')%>" media="(max-width: 426px)">
+        <source srcset="<%=require('./images/author232.png')%>" media="(max-width: 769px)">
+        <img class="author__img" src="<%=require('./images/author464.png')%>"
           alt="здесь должна быть картинка автора, но что-то пошло не так">
       </picture>
       <div class="author__container-text">
         <h2 class="author__title">Об авторе</h2>
-        <p class="author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-          занимаетесь, какими технологиями разработки владеете.</p>
-        <p class="author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
-          чем можете помочь потенциальным заказчикам.</p>
+        <p class="author__paragraph">Меня зовут Александр, я начинающий фронтенд-разработчик.</p>
+        <p class="author__paragraph">Пройдя курсы от Яндекс.Практикума, я научился:<br>
+          &bull; Верстать сайты и приложения для всех типов устройств,<br>
+          &bull; Создавать сайты и приложения с помощью JavaScript,<br>
+          &bull; Работать с системой Git и с сервисом GitHub,<br>
+          &bull; Собирать проекты Webpack'ом.
+        </p>
       </div>
     </div>
-  </section>
+  </section> -->
   <footer class="footer">
     <p class="footer__copyright">© 2020 А.В Крылов</p>
     <nav class="footer__menu">
@@ -169,6 +90,7 @@
       </a>
     </div>
   </footer>
+
   <script src="<%= htmlWebpackPlugin.files.js%>"></script>
 </body>
 </html>

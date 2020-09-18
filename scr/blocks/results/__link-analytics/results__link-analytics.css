@@ -7,3 +7,7 @@
   align-items: center;
   color: #1A1B22;
 }
+
+.results__link-analytics:hover {
+  opacity: .8;
+}

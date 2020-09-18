@@ -8,12 +8,12 @@
   <meta name="author" content="Александр Крылов">
   <title>О проекте</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css%>">
-  <link rel="icon" href="/scr/images/Group.png">
+  <link rel="icon" href="./images/Group.png">
 </head>
-<!--  PABOTAET-->
+
 <body>
   <header class="header header_theme_dark">
-    <p class="header__logo header__logo_theme_dark">NewsAnalyzer</p>
+    <a  href="index.html"><p class="header__logo header__logo_theme_dark">NewsAnalyzer</p></a>
     <nav class="header__menu">
       <a class="header__link header__link_hover_dark" href="index.html">Главная</a>
       <a class="header__link header__link_hover_dark header__link_theme_dark-active" href="about.html">О проекте</a>
@@ -40,26 +40,33 @@
   <section class="technologies">
     <h3 class="technologies__title">Используемые технологии</h3>
     <div class="technologies__block-img">
-      <img class="technologies__img" src="<%=require('./images/tech(2).png')%> " alt="здесь должна быть картинка HTML, но что-то пошло не так">
-      <img class="technologies__img" src="<%=require('./images/tech(3).png')%>" alt="здесь должна быть картинка CSS, но что-то пошло не так">
-      <img class="technologies__img" src="<%=require('./images/tech(5).png')%>" alt="здесь должна быть картинка Java Script, но что-то пошло не так">
-      <img class="technologies__img" src="<%=require('./images/tech(4).png')%>" alt="здесь должна быть картинка Webpack, но что-то пошло не так">
+      <img class="technologies__img" src="<%=require('./images/tech(2).png')%> "
+        alt="здесь должна быть картинка HTML, но что-то пошло не так">
+      <img class="technologies__img" src="<%=require('./images/tech(3).png')%>"
+        alt="здесь должна быть картинка CSS, но что-то пошло не так">
+      <img class="technologies__img" src="<%=require('./images/tech(5).png')%>"
+        alt="здесь должна быть картинка Java Script, но что-то пошло не так">
+      <img class="technologies__img" src="<%=require('./images/tech(4).png')%>"
+        alt="здесь должна быть картинка Webpack, но что-то пошло не так">
     </div>
   </section>
   <section class="author">
     <div class="author__blok">
       <picture>
-        <source srcset="<%=require('./images/image-iPone.png')%>" media="(max-width: 426px)">
-        <source srcset="<%=require('./images/image-iPad.png')%>" media="(max-width: 769px)">
-        <img class="author__img" src="<%=require('./images/image-03.png')%>"
+        <source srcset="<%=require('./images/author272.png')%>" media="(max-width: 426px)">
+        <source srcset="<%=require('./images/author232.png')%>" media="(max-width: 769px)">
+        <img class="author__img" src="<%=require('./images/author464.png')%>"
           alt="здесь должна быть картинка автора, но что-то пошло не так">
       </picture>
       <div class="author__container-text">
         <h2 class="author__title">Об авторе</h2>
-        <p class="author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы
-          занимаетесь, какими технологиями разработки владеете.</p>
-        <p class="author__paragraph">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и
-          чем можете помочь потенциальным заказчикам.</p>
+        <p class="author__paragraph">Меня зовут Александр, я начинающий фронтенд-разработчик.</p>
+        <p class="author__paragraph">Пройдя курсы от Яндекс.Практикума, я научился:<br>
+          &bull; Верстать сайты и приложения для всех типов устройств,<br>
+          &bull; Создавать сайты и приложения с помощью JavaScript,<br>
+          &bull; Работать с системой Git и с сервисом GitHub,<br>
+          &bull; Собирать проекты Webpack'ом.
+        </p>
       </div>
     </div>
   </section>
@@ -69,83 +76,17 @@
       <h3 class="commit-history__title">История коммитов из GitHub</h3>
       <a class="commit-history__link commit-history__link_visible" href="https://github.com">Открыть в Github ></a>
     </div>
+
     <div class="commit-history__list">
-
-      <div class="commit-history__button-container commit-history__button-container_locations_left">
-        <button class="commit-history__button commit-history__button_locations_left">&lt;</button>
-      </div>
-      <div class="commit-history__button-container commit-history__button-container_locations_right">
-        <button class="commit-history__button commit-history__button_locations_right">></button>
-      </div>
-
-      <div class="commit-history__card">
-        <a class="commit-history__card-link" href="https://github.com">
-          <p class="commit-history__date">14 августа, 2019</p>
-          <div class="commit-history__blok">
-            <div class="commit-history__image" style="background-image: url(/scr/images/image-01.png)"></div>
-            <div class="commit-history__data">
-              <h3 class="commit-history__name">Антон Долинин</h3>
-              <p class="commit-history__email">anton@yandex.ru</p>
-            </div>
-          </div>
-          <p class="commit-history__text">Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.
-            Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-        </a>
-      </div>
-      <div class="commit-history__card">
-        <a class="commit-history__card-link" href="https://github.com">
-          <p class="commit-history__date">14 августа, 2019</p>
-          <div class="commit-history__blok">
-            <div class="commit-history__image" style="background-image: url(/scr/images/image-04.png)"></div>
-            <div class="commit-history__data">
-              <h3 class="commit-history__name">Антон Долинин</h3>
-              <p class="commit-history__email">anton@yandex.ru</p>
-            </div>
-          </div>
-          <p class="commit-history__text">You can install this plugin directly from NetBeans Plugin Portal: in
-            NetBeans, open Tools >
-            Plugins > Available plugins and find and install Emmet plugin.</p>
-        </a>
-      </div>
-      <div class="commit-history__card">
-        <a class="commit-history__card-link" href="https://github.com">
-          <p class="commit-history__date">14 августа, 2019</p>
-          <div class="commit-history__blok">
-            <div class="commit-history__image" style="background-image: url(/scr/images/image-03.64.64.png)"></div>
-            <div class="commit-history__data">
-              <h3 class="commit-history__name">Антон Долинин</h3>
-              <p class="commit-history__email">anton@yandex.ru</p>
-            </div>
-          </div>
-          <p class="commit-history__text">With Emmet, you can type CSS-like expressions
-            that can be dynamically parsed, and produce
-            output depending on what you type in the abb...</p>
-        </a>
-      </div>
-      <div class="commit-history__card">
-        <a class="commit-history__card-link" href="https://github.com">
-          <p class="commit-history__date">14 августа, 2019</p>
-          <div class="commit-history__blok">
-            <div class="commit-history__image" style="background-image: url(/scr/images/image-01.png)"></div>
-            <div class="commit-history__data">
-              <h3 class="commit-history__name">Антон Долинин</h3>
-              <p class="commit-history__email">anton@yandex.ru</p>
-            </div>
-          </div>
-          <p class="commit-history__text">Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.
-            Emmet (formerly Zen Coding) is a web-
-            developer’s toolkit that can greatly improve your HTML & CSS workflow.</p>
-        </a>
-      </div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button swiper-button-prev"></div>
+        <div class="swiper-button swiper-button-next"></div>
     </div>
-    <div class="commit-history__blok-transitions">
-      <div class="commit-history__transitions"></div>
-      <div class="commit-history__transitions"></div>
-      <div class="commit-history__transitions"></div>
     </div>
+
     <a class="commit-history__link commit-history__link_hidden" href="https://github.com">Открыть в Github ></a>
   </section>
   <footer class="footer">

@@ -7,3 +7,7 @@
   padding:  5% 0 6%;
   font-family: 'Roboto', Helvetica, Arial, sans-serif;
 }
+
+.not-found_hidden {
+  display: none;
+}
