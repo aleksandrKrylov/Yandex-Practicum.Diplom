@@ -30,9 +30,8 @@ const searchInput = new SearchInput(form, setData, getData);
 const newsApi = new NewsApi(apiData, getDateApi, );
 const newsCardList = new NewsCardList(listContainer, createNewsCard, buttonShowMore, NUMBER_NEWS_CARDS, buttonSearch);
 
-
+const getArticles = getData('news');
 function portrayList() {
-  const getArticles = getData('news');
   if (getArticles.length === 0) {
     displaysOpen(notFoundClass, 'not-found_hidden');
     displaysClose(listClass, 'results_hidden');
@@ -71,6 +70,6 @@ buttonSearch.addEventListener("click", () => {
   });
 });
 
-//console.log(answerApi)
+
 
 
