@@ -3,8 +3,11 @@ import "../pages/analytics.css";
 import { AnalyticsHeader } from "./components/AnalyticsHeader.js";
 import { AnalyticsCardList } from "./components/AnalyticsCardList.js";
 import { DataStorage } from "./modules/DataStorage.js";
-import { getDateApi, getDatedaysWeeks } from "./utils/date.js";
+import { getDateApi, getDatedaysWeeks, dateDisplayMonth } from "./utils/date.js";
 
+const analyticsMonth =  document.querySelector('.analytics__month');
+analyticsMonth.textContent = `(${dateDisplayMonth(new Date())})`;
+const analyticsClass = document.querySelector('.analytics');
 const textHeader = {
   title: document.querySelector(".about-request__keyWord"),
   statisticsWeek: document.querySelector(".about-request__week"),
@@ -15,16 +18,12 @@ const getData = (key) => dataStorage.getData(key);
 
 const dataStorage = new DataStorage();
 const searchKeyWord = new RegExp(getData("keyWord"), "gi");
-
 let itemStatistics = document.querySelectorAll(".analytics__item-statistics");
 let itemDate = document.querySelectorAll(".analytics__item-date");
 const analyticsHeader = new AnalyticsHeader(getData, textHeader, searchKeyWord);
-const analyticsCardList = new AnalyticsCardList(itemStatistics, amountInterest, itemDate, getDatedaysWeeks
-);
+const analyticsCardList = new AnalyticsCardList(itemStatistics, amountInterest, itemDate, getDatedaysWeeks);
 
 analyticsHeader.renderHeader();
-
-
 function quantityСoincidence(bremi) {
   let quantity = 0;
   let newsData = getData("news");
@@ -68,3 +67,5 @@ if ( getData('numberNews') >= 7) {
 analyticsCardList.renderStatistics();
 }
 analyticsCardList.renderDate();
+
+

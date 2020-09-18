@@ -15,7 +15,7 @@ export class AnalyticsCardList {
   }
 
   renderDate() {
-     this._i = 0;
+    this._i = 0;
     this.itemDate.forEach((element) => {
       element.textContent = this.getDatedaysWeeks(new Date(), this._i);
       this._i++;

@@ -6,10 +6,8 @@ import { NewsApi } from "./modules/NewsApi.js";
 import { NewsCard } from "./components/NewsCard.js";
 import { NewsCardList } from "./components/NewsCardList.js";
 import { DataStorage } from "./modules/DataStorage.js";
-import { DisplaysPreloader } from "./components/DisplaysPreloader.js";
-import { DisplaysNotFound } from "./components/DisplaysNotFound.js";
-import { DisplaysNewsCardList } from "./components/DisplaysNewsCardList.js";
-import {dateDisplay, getDateApi} from './utils/date.js'
+import {dateDisplay, getDateApi} from './utils/date.js';
+import {displaysClose, displaysOpen} from './utils/displaysElements.js';
 
 const form = document.querySelector("#form");
 const listContainer = document.querySelector(".results__list");
@@ -31,19 +29,16 @@ const dataStorage = new DataStorage();
 const searchInput = new SearchInput(form, setData, getData);
 const newsApi = new NewsApi(apiData, getDateApi, );
 const newsCardList = new NewsCardList(listContainer, createNewsCard, buttonShowMore, NUMBER_NEWS_CARDS, buttonSearch);
-const preloader = new DisplaysPreloader(preloaderClass);
-const notFound = new DisplaysNotFound(notFoundClass);
-const list = new DisplaysNewsCardList(listClass);
 
 
 function portrayList() {
-  const getArticles = getData('news'); // возврощаем данные
+  const getArticles = getData('news');
   if (getArticles.length === 0) {
-    notFound.open()
-    list.close()
+    displaysOpen(notFoundClass, 'not-found_hidden');
+    displaysClose(listClass, 'results_hidden');
   }
   else {
-    notFound.close()
+    displaysClose(notFoundClass, 'not-found_hidden');
   }
   newsCardList.renderList(getArticles);
 }
@@ -51,20 +46,19 @@ function portrayList() {
 searchInput.validationInput();
 searchInput.getFieldValue();
 newsCardList.addListener();
-notFound.close()
-preloader.close()
+displaysClose(preloaderClass, 'preloader_hidden');
 portrayList();
 
 buttonSearch.addEventListener("click", () => {
-  preloader.open()
-  list.close()
+  displaysOpen(preloaderClass, 'preloader_hidden');
+  displaysClose(listClass, 'results_hidden');
   buttonSearch.setAttribute("disabled", true);
   const keyWord = getData('keyWord');
   newsApi.getNews(keyWord)
   .then((res) => {
     buttonSearch.removeAttribute("disabled");
-    preloader.close()
-    list.open()
+    displaysClose(preloaderClass, 'preloader_hidden');
+    displaysOpen(listClass, 'results_hidden');
     const answerApi = {
      articles: setData('news', res.articles),
      totalResults: setData('numberNews', res.totalResults),
@@ -77,6 +71,6 @@ buttonSearch.addEventListener("click", () => {
   });
 });
 
-
+//console.log(answerApi)
 
 

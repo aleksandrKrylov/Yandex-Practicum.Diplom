@@ -1,28 +1,49 @@
 # **Yandex-Practicum.Diplom**
-Версия 0.0.1
+Версия 1.0.0
 
 ## О проекте:
-Проект для поиска новостей
+Сервис для анализа происходящих в мире событий. Его задача — установить, насколько популярны новости на определённую тему.
+Сайт состоит из трёх страниц:
+1 Главная. Содержит окно поиска и список новостей.
+2 Страница «О проекте». Содержит информацию о работе: что это за проект, кто его делал, какими технологиями пользовался и историю коммитов.
+3 Страница с аналитикой. На ней отображается диаграмма популярности новостей.
 
 ## Основной функционал:
-- поиск новостей
-- аналитика заданного запроса
+Пользователь вводит в строку поиска ключевые слова, по которым хочет найти новости.
+По нажатию кнопки «Искать» сайт выполняет два действия:
+- Находит все статьи по запросу за последнюю неделю и отрисовывает карточки с новостями;
+- Подсчитывает статистику: сколько новостей вышло в каждый из последних семи дней.
 
 ## Стэк технологий:
 ES6, Babel, CSS3, HTML5, Webpack, OOP, BEM
 
 ## Пакеты которые используются в сборках:
-- [Babel CLI](https://babeljs.io/docs/en/babel-cli#docsNav)
-- [Babel Core](https://babeljs.io/docs/en/babel-core)
-- [Babel Preset Evnvironment](https://babeljs.io/docs/en/babel-preset-env#docsNav)
-- [Сore JS](https://github.com/zloirock/core-js#readme)
-- [PostCSS](https://postcss.org/)
-- [Define plugin](https://webpack.js.org/plugins/define-plugin/)
-- [Style loader](https://github.com/webpack-contrib/style-loader)
-- [Optimize CSS assets](https://www.npmjs.com/package/optimize-css-assets-webpack-plugin)
-- [File loader](https://github.com/webpack-contrib/file-loader)
-- [Image Webpack loader](https://www.npmjs.com/package/image-webpack-loader)
-- [Cross-Env](https://www.npmjs.com/package/cross-env)
+#### Для работы с кодом:
+- babel-loader,
+- babel-cli,
+- babel-core,
+- babel-preset-env,
+- core-js,
+- babel-polyfill,
+- mini-css-extract-plugin,
+- optimize-css-assets-webpack-plugin,
+- css-loader,
+- html-webpack-plugin,
+- postcss-loader,
+- autoprefixer,
+- cssnano.
+#### Для работы вебпака:
+- gh-pages,
+- webpack-md5-hash,
+- webpack,
+- webpack-cli,
+- webpack-dev-server,
+- path.
+#### Для работы с изображениями:
+- file-loader,
+- image-webpack-loader.
+#### Для работы с слайдером:
+- swiper.
 
 ## Инструкции по запуску:
 - Скачать или склонировать репозитори
