@@ -30,16 +30,22 @@ const searchInput = new SearchInput(form, setData, getData);
 const newsApi = new NewsApi(apiData, getDateApi, );
 const newsCardList = new NewsCardList(listContainer, createNewsCard, buttonShowMore, NUMBER_NEWS_CARDS, buttonSearch);
 
-const getArticles = getData('news');
 function portrayList() {
-  if (getArticles.length === 0) {
-    displaysOpen(notFoundClass, 'not-found_hidden');
-    displaysClose(listClass, 'results_hidden');
+  const getArticles = getData('news');
+  if(getArticles !== null) {
+    if (getArticles.length === 0) {
+      displaysOpen(notFoundClass, 'not-found_hidden');
+      displaysClose(listClass, 'results_hidden');
+    }
+    else {
+      displaysClose(notFoundClass, 'not-found_hidden');
+    }
+    newsCardList.renderList(getArticles);
   }
   else {
     displaysClose(notFoundClass, 'not-found_hidden');
+    displaysClose(listClass, 'results_hidden');
   }
-  newsCardList.renderList(getArticles);
 }
 
 searchInput.validationInput();
